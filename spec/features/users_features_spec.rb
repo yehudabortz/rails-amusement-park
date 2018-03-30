@@ -19,6 +19,7 @@ describe 'Feature Test: User Signup', :type => :feature do
     # user_signup method is defined in login_helper.rb
     user_signup
     expect(page.get_rack_session_key('user_id')).to_not be_nil
+    binding.pry
   end
 
   it 'successfully logs in as non-admin' do
